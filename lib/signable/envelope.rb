@@ -6,6 +6,7 @@ module Signable
     column :status
     column :signed_pdf
     column :redirect_url
+    column :meta
     embed :documents
     embed :parties
 
