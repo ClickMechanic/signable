@@ -29,7 +29,7 @@ module Signable
         Response.new response
       end
 
-      def delete(entry_poind, id)
+      def delete(entry_point, id)
         response = self.class.delete "/#{entry_point}/#{id}"
         Response.new response
       end
