@@ -10,6 +10,10 @@ module Signable
     embed :documents
     embed :parties
 
+    def remind
+      self.class.client.remind self.class.entry_point, fingerprint
+    end
+
     def update
       raise "not available"
     end
